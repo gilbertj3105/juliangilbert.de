@@ -1,0 +1,177 @@
+{{ define "main" }}
+
+<main class="project">
+
+  <section class="project-head">
+
+    <h1>{{ .Title }}</h1>
+
+    <p class="project-meta">
+      {{ .Params.info }}
+    </p>
+
+    <p class="project-logline">
+      {{ .Params.logline }}
+    </p>
+
+  </section>
+
+  <!-- MAIN MEDIA -->
+<section class="project-video">
+
+  {{ if .Params.vimeo }}
+
+    <iframe
+      src="https://player.vimeo.com/video/{{ .Params.vimeo }}"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+  {{ else if .Params.youtube }}
+
+    <iframe
+      src="https://www.youtube.com/embed/{{ .Params.youtube }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+  {{ else if .Params.video }}
+
+  <video
+src="{{ .Params.video }}"
+autoplay
+muted
+loop
+playsinline
+aria-setsize="10"
+preload="metadata">
+</video>
+
+  {{ else if .Params.still }}
+
+    <img
+      src="{{ .Params.still }}"
+      alt="{{ .Title }}">
+
+  {{ end }}
+
+</section>
+
+  </section>
+
+  <!-- DETAILS -->
+  <section class="project-details">
+
+    <!-- CREDITS -->
+    <section class="credits">
+
+      {{ with .Params.credits }}
+
+        <!-- CAST -->
+        {{ with .cast }}
+        <div class="credits-group credits-cast">
+          <h4 class="credits-title">Cast</h4>
+
+          <div class="cast-list">
+            {{ range . }}
+              <span class="cast-name">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        <!-- CREW -->
+        {{ with .crew }}
+        <div class="credits-group credits-crew">
+          <h4 class="credits-title">Crew</h4>
+
+          <div class="credits-list">
+            {{ range . }}
+              <div class="credit-row">
+                <div class="credit-role">{{ .role }}</div>
+                <div class="credit-name">{{ .name }}</div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        <!-- FALLBACK (ALT STRUCTURE) -->
+        {{ if not (or .cast .crew) }}
+          <div class="credits-list">
+            {{ range . }}
+              <div class="credit-row">
+                <div class="credit-role">{{ .role }}</div>
+                <div class="credit-name">{{ .name }}</div>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+
+      {{ end }}
+
+    </section>
+
+  <!-- FESTIVALS -->
+  {{ if .Params.festivals }}
+
+  <div>
+
+    <h4>Festivals (selection)</h4>
+
+    <div class="festival-list">
+
+      {{ range .Params.festivals }}
+        <p>{{ . }}</p>
+      {{ end }}
+
+    </div>
+
+    {{ if .Params.poster }}
+
+    <div class="festival-poster">
+      <img src="{{ .Params.poster }}" alt="{{ .Title }}">
+    </div>
+
+    {{ end }}
+
+  </div>
+
+  {{ else }}
+
+    {{ if .Params.poster }}
+
+    <div class="festival-poster no-festivals">
+      <img src="{{ .Params.poster }}" alt="{{ .Title }}">
+    </div>
+
+    {{ end }}
+
+  {{ end }}
+
+</section>
+
+<!-- STILLS -->
+<section class="project-stills">
+
+  {{ range .Params.stills }}
+
+    <img src="{{ . }}">
+
+  {{ end }}
+
+</section>
+
+{{ with .Params.still_copyright }}
+
+  <div class="still-copyright">
+    {{ . }}
+  </div>
+
+{{ end }}
+
+</main>
+
+{{ end }}

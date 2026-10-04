@@ -1,0 +1,5 @@
+baseURL = 'https://juliangilbert.de/'
+locale = 'en-de'
+title = 'Julian Gilbert - Film Editor'
+[params]
+  description = 'Film editor based in Ludwigsburg.'

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {{ if .IsHome }}
+      Julian Gilbert — Film Editor
+    {{ else }}
+      {{ .Title }} — Julian Gilbert
+    {{ end }}
+  </title>
+
+  <meta
+    name="description"
+    content="Film Editor and editor based in Ludwigsburg, Germany."
+  >
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- Open Graph / Social Preview -->
+  <meta
+    property="og:title"
+    content="{{ if .IsHome }}Julian Gilbert — Film Editor{{ else }}{{ .Title }} — Julian Gilbert{{ end }}"
+  >
+
+  <meta
+    property="og:description"
+    content="Film Editor and editor based in Ludwigsburg, Germany. Portfolio featuring documentary, fiction, commercial and music video work."
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="https://juliangilbert.de/og-image.jpg">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<!-- NOISE GANZ UNTEN -->
+<div class="noise"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="/" class="logo">
+  Julian Gilbert
+</a>
+  <nav>
+    <a href="/">Work</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<!-- CONTENT -->
+{{ block "main" . }}{{ end }}
+
+<footer class="footer">
+
+  <div class="footer-copy">
+    © Julian Gilbert 2026
+  </div>
+
+  <div class="footer-links">
+
+    <!-- MAIL -->
+    <a href="mailto:julian.gilbert@gmx.de" aria-label="Email">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="1"/>
+        <path d="M4 6l8 6 8-6"/>
+      </svg>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/_gilberton_/"
+       target="_blank"
+       rel="noopener"
+       aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1"/>
+      </svg>
+    </a>
+
+    <!-- CREW UNITED -->
+  <a href="https://www.crew-united.com/de/Julian-Gilbert_673708.html"
+     target="_blank"
+     rel="noopener"
+     aria-label="Crew United">
+    <img src="https://www.crew-united.com/static/images/logo/cu-logo-head.svg" alt="Crew United" class="cu-icon">
+  </a>
+
+    <!-- LINKEDIN -->
+    <a href="https://www.linkedin.com/in/julian-gilbert-94b9681a7/"
+       target="_blank"
+       rel="noopener"
+       aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="4" y="9" width="3" height="11"/>
+        <circle cx="5.5" cy="5.5" r="1.5"/>
+        <path d="M10 20V9h3v1.5c.8-1.2 2-2 4-2 3 0 4 2 4 5V20h-3v-6c0-1.7-.6-2.5-2-2.5-1.6 0-3 1-3 3V20z"/>
+      </svg>
+    </a>
+
+    <!-- IMPRESSUM -->
+    <a href="/impressum/" class="footer-impressum">
+      Impressum // Datenschutzerklärung
+    </a>
+
+  </div>
+
+</footer>
+
+<script>
+
+const noise = document.querySelector('.noise')
+const maxNoiseOffset = 60
+
+window.addEventListener('scroll', () => {
+
+  const scrollY = window.scrollY
+
+  const offset = Math.max(
+    -maxNoiseOffset,
+    Math.min(maxNoiseOffset, scrollY * -0.1)
+  )
+
+  noise.style.transform =
+    `translateY(${offset}px)`
+
+})
+
+</script>
+</body>
+</html>

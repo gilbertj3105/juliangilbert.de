@@ -1,0 +1,213 @@
+{{ define "main" }}
+
+<div class="work-page">
+
+  <div class="filter">
+    <span data-filter="all">All</span>
+    <span data-filter="fiction">Fiction</span>
+    <span data-filter="documentary">Documentary</span>
+    <span data-filter="commercial">Commercial</span>
+    <span data-filter="music">Music Video</span>
+  </div>
+
+  <main class="grid">
+
+    {{ range sort (where .Site.RegularPages "Section" "projects") "Weight" }}
+
+    <a href="{{ .RelPermalink }}"
+       class="item"
+       data-category="{{ delimit .Params.category " " }}">
+
+      <div class="thumb">
+
+        <img src="{{ .Params.thumbnail }}" class="thumb-img">
+
+        <video class="thumb-video"
+               muted
+               loop
+               playsinline
+               preload="metadata">
+
+          <source src="{{ .Params.preview }}" type="video/mp4">
+
+        </video>
+
+      </div>
+
+      <div class="project-caption">
+
+        <h2>{{ .Title }}</h2>
+
+        <span>
+          {{ .Params.client }}
+          {{ with .Params.director }}
+          — {{ . }}
+          {{ end }}
+        </span>
+
+      </div>
+
+    </a>
+
+    {{ end }}
+
+  </main>
+
+</div>
+
+<script>
+
+const filters = document.querySelectorAll('.filter span')
+const items = document.querySelectorAll('.item')
+
+filters.forEach(filter => {
+
+  filter.addEventListener('click', () => {
+
+    const category = filter.dataset.filter
+
+    filters.forEach(f => f.classList.remove('active'))
+    filter.classList.add('active')
+
+    items.forEach(item => {
+
+      if (
+        category === 'all' ||
+        item.dataset.category.includes(category)
+      ) {
+        item.style.display = 'block'
+      } else {
+        item.style.display = 'none'
+      }
+
+    })
+
+  })
+
+})
+
+const thumbs = document.querySelectorAll('.thumb')
+
+thumbs.forEach(thumb => {
+
+  const video = thumb.querySelector('.thumb-video')
+
+  thumb.addEventListener('mouseenter', () => {
+    video.play()
+  })
+
+  thumb.addEventListener('mouseleave', () => {
+    video.pause()
+    video.currentTime = 0
+  })
+
+})
+
+</script>
+
+<script>
+
+const filter = document.querySelector('.filter')
+
+window.addEventListener('scroll', () => {
+
+  const startTop = 120
+  const centerTop = (window.innerHeight - filter.offsetHeight) / 2
+
+  const scrollDistance = 5000
+  const progress = Math.min(window.scrollY / scrollDistance, 0.5)
+
+  const currentTop =
+    startTop + (centerTop - startTop) * progress
+
+  filter.style.top = `${currentTop}px`
+
+})
+
+<script>
+
+const filters = document.querySelectorAll('.filter span')
+const items = document.querySelectorAll('.item')
+
+filters.forEach(filter => {
+
+  filter.addEventListener('click', () => {
+
+    const category = filter.dataset.filter
+
+    filters.forEach(f => f.classList.remove('active'))
+    filter.classList.add('active')
+
+    items.forEach(item => {
+
+      if (
+        category === 'all' ||
+        item.dataset.category.includes(category)
+      ) {
+        item.style.display = 'block'
+      } else {
+        item.style.display = 'none'
+      }
+
+    })
+
+  })
+
+})
+
+const thumbs = document.querySelectorAll('.thumb')
+
+thumbs.forEach(thumb => {
+
+  const video = thumb.querySelector('.thumb-video')
+
+  thumb.addEventListener('mouseenter', () => {
+    video.play()
+  })
+
+  thumb.addEventListener('mouseleave', () => {
+    video.pause()
+    video.currentTime = 0
+  })
+
+})
+
+</script>
+
+<script>
+
+/* ------------------------------------------------ */
+/* FILTER POSITION ON SCROLL */
+/* ------------------------------------------------ */
+
+const filterEl = document.querySelector('.filter')
+
+function updateFilterPosition() {
+
+  /* Mobile: Filter bleibt in seiner normalen Position */
+  if (window.innerWidth <= 900) {
+    filterEl.style.top = ''
+    return
+  }
+
+  /* Desktop */
+  const startTop = 120
+  const centerTop = (window.innerHeight - filterEl.offsetHeight) / 2
+
+  const scrollDistance = 5000
+  const progress = Math.min(window.scrollY / scrollDistance, 1)
+
+  const currentTop =
+    startTop + (centerTop - startTop) * progress
+
+  filterEl.style.top = `${currentTop}px`
+}
+
+window.addEventListener('scroll', updateFilterPosition)
+window.addEventListener('resize', updateFilterPosition)
+
+updateFilterPosition()
+
+</script>
+
+{{ end }}
