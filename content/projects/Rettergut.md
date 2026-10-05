@@ -67,10 +67,10 @@ festivals:
   - "Bundesfestival junger Film - Offizieller Wettbewerb (2025)"
 
 stills:
-  - "/images/rettergut/still1.jpg"
-  - "/images/rettergut/still2.jpg"
-  - "/images/rettergut/still3.jpg"
-  - "/images/rettergut/still4.jpg"
+  - "/images/Rettergut/still1.jpg"
+  - "/images/Rettergut/still2.jpg"
+  - "/images/Rettergut/still3.jpg"
+  - "/images/Rettergut/still4.jpg"
 
 still_copyright: "© Vick Polok"
 ---

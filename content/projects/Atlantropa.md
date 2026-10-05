@@ -34,7 +34,7 @@ credits:
   - role: "Editor"
     name: "Julian Gilbert"
 
-poster: "/images/Atlantropa/poster.png"
+poster: "/images/Atlantropa/Poster.png"
 
 stills:
   - "/images/Atlantropa/still01.png"

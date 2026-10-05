@@ -34,7 +34,7 @@ credits:
   - role: "Voice"
     name: "Lara Maria Humm"
 
-poster: "/images/consider-the-eel/ABDA_Poster_klein.jpg"
+poster: "/images/consider-the-eel/ABDA_Poster_klein.png"
 
 logline: "The film reveals the increasingly fragile relationship between man and nature by exploring the mysterious world of the European eel, highlighting the moral and technological challenges of our time."
 

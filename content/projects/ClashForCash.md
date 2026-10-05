@@ -71,8 +71,8 @@ credits:
       name: "86 tales, Ai Dubbing, hello robin"
 
 stills:
-  - "/images/Clashforcash/still01.jpeg"
-  - "/images/Clashforcash/still02.jpeg"
-  - "/images/Clashforcash/still03.jpeg"
-  - "/images/Clashforcash/still04.jpeg"
+  - "/images/Clashforcash/Still01.jpeg"
+  - "/images/Clashforcash/Still02.jpeg"
+  - "/images/Clashforcash/Still03.jpeg"
+  - "/images/Clashforcash/Still04.jpeg"
 ---
