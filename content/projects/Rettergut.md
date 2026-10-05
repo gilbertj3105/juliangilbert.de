@@ -7,7 +7,7 @@ info: "Commercial / 2024 / 02:25"
 
 logline: "Stevie, a pea pod, has an accident at the gym and goes through an existential crisis since he can no longer be sold in the supermarket."
 
-thumbnail: "/images/rettergut/thumb.jpg"
+thumbnail: "/images/Rettergut/thumb.jpg"
 
 preview: "/videos/rettergut-preview.mp4"
 
