@@ -9,7 +9,7 @@ thumbnail: "/images/Haifisch/thumb.png"
 
 preview: "/videos/Haifisch-preview.mp4"
 
-youtube: "https://www.youtube.com/watch?v=UCwmkj8W5QM&list=RDUCwmkj8W5QM&start_radio=1"
+youtube: "ZTPfUaMFwFE"
 
 poster: /images/Haifisch/Hai_Karte.jpg
 

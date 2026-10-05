@@ -14,7 +14,7 @@ thumbnail: "/images/Clashforcash/thumb.png"
 
 preview: "/videos/CFC-preview.mp4"
 
-youtube: "https://www.youtube.com/watch?v=nol973mBn_I"
+youtube: "nol973mBn_I"
 
 credits:
   cast:

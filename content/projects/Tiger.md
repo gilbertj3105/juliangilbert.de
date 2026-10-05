@@ -11,7 +11,7 @@ thumbnail: "/images/Tiger/thumb.jpg"
 
 preview: "/videos/Tiger-preview.mp4"
 
-youtube: "https://www.youtube.com/watch?v=UCwmkj8W5QM&list=RDUCwmkj8W5QM&start_radio=1"
+youtube: "UCwmkj8W5QM"
 
 poster: /images/Tiger/poster.jpg
 

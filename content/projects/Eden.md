@@ -53,7 +53,7 @@ festivals:
   - "KurzFilmSpiele Konstanz (2025)"
   - "Baden-Württembergischer Publikumsfilmpreis (nominiert) (2026)"
 
-poster: "/images/eden/poster.jpg"
+poster: "/images/Eden/poster.jpg"
 
 logline: "To test her faith one last time Sister Elisabeth meets her childhood sweetheart Jonathan one last time before her final trial."
 
