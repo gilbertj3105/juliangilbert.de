@@ -37,6 +37,6 @@ credits:
 poster: "/images/Atlantropa/Poster.png"
 
 stills:
-  - "/images/Atlantropa/still01.png"
-  - "/images/Atlantropa/still02.png"
+  - "/images/Atlantropa/Still01.png"
+  - "/images/Atlantropa/Still02.png"
 ---
