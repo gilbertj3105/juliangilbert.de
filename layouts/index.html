@@ -86,74 +86,6 @@ filters.forEach(filter => {
 
 })
 
-const thumbs = document.querySelectorAll('.thumb')
-
-thumbs.forEach(thumb => {
-
-  const video = thumb.querySelector('.thumb-video')
-
-  thumb.addEventListener('mouseenter', () => {
-    video.play()
-  })
-
-  thumb.addEventListener('mouseleave', () => {
-    video.pause()
-    video.currentTime = 0
-  })
-
-})
-
-</script>
-
-<script>
-
-const filter = document.querySelector('.filter')
-
-window.addEventListener('scroll', () => {
-
-  const startTop = 120
-  const centerTop = (window.innerHeight - filter.offsetHeight) / 2
-
-  const scrollDistance = 5000
-  const progress = Math.min(window.scrollY / scrollDistance, 0.5)
-
-  const currentTop =
-    startTop + (centerTop - startTop) * progress
-
-  filter.style.top = `${currentTop}px`
-
-})
-
-<script>
-
-const filters = document.querySelectorAll('.filter span')
-const items = document.querySelectorAll('.item')
-
-filters.forEach(filter => {
-
-  filter.addEventListener('click', () => {
-
-    const category = filter.dataset.filter
-
-    filters.forEach(f => f.classList.remove('active'))
-    filter.classList.add('active')
-
-    items.forEach(item => {
-
-      if (
-        category === 'all' ||
-        item.dataset.category.includes(category)
-      ) {
-        item.style.display = 'block'
-      } else {
-        item.style.display = 'none'
-      }
-
-    })
-
-  })
-
-})
 
 const thumbs = document.querySelectorAll('.thumb')
 
@@ -172,9 +104,6 @@ thumbs.forEach(thumb => {
 
 })
 
-</script>
-
-<script>
 
 /* ------------------------------------------------ */
 /* FILTER POSITION ON SCROLL */
