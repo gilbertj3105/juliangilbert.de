@@ -144,7 +144,7 @@ preload="metadata">
     {{ if .Params.poster }}
 
     <div class="festival-poster no-festivals">
-      <img src="{{ .Params.poster }}" alt="{{ .Title }}">
+      <img src="{{ .Params.poster }}" loading="lazy" decoding="async" alt="{{ .Title }} – Poster">
     </div>
 
     {{ end }}
@@ -154,14 +154,15 @@ preload="metadata">
 </section>
 
 <!-- STILLS -->
+
 <section class="project-stills">
-
   {{ range .Params.stills }}
-
-    <img src="{{ . }}">
-
+    <img
+      src="{{ . }}"
+      loading="lazy"
+      decoding="async"
+      alt="{{ $.Title }} – Filmstill">
   {{ end }}
-
 </section>
 
 {{ with .Params.still_copyright }}
