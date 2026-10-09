@@ -15,7 +15,7 @@ preview: "/videos/consider-the-eel-preview.mp4"
 year: "2025"
 duration: "27 min"
 
-video: "/videos/consider-the-eel-projecthero.mp4"
+vimeo: "1234516614?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0&controls=0"
 
 credits:
   crew:
