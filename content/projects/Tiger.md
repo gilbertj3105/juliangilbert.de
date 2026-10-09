@@ -9,7 +9,7 @@ logline: "“TIGER” is about the desire to feel powerful and fearless. Piya, l
 
 thumbnail: "/images/Tiger/thumb.jpg"
 
-preview: "/videos/Tiger-preview.mp4"
+preview: "/videos/tiger-preview.mp4"
 
 youtube: "UCwmkj8W5QM"
 
