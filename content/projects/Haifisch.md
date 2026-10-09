@@ -5,7 +5,7 @@ weight: 8
 
 info: "Music Video / 2026 / 03:19"
 
-thumbnail: "/images/Haifisch/thumb.png"
+thumbnail: "/images/Haifisch/thumb_ergebnis.webp"
 
 preview: "/videos/Haifisch-preview.mp4"
 

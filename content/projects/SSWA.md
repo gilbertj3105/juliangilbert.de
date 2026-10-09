@@ -10,7 +10,7 @@ info: "Documentary / 2026 / 23:46min"
 
 logline: "While most people avoid thinking about death, Helene (26) encounters it every day. As one of Germany’s few professional thanatopractors, she restores the appearance of the deceased, offering an intimate perspective on farewell, dignity, and remembrance."
 
-thumbnail: "/images/SSWA/thumb.png"
+thumbnail: "/images/SSWA/thumb_ergebnis.webp"
 
 preview: "/videos/SSWA-preview.mp4"
 

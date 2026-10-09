@@ -8,7 +8,7 @@ info: "Experimental / 2024 / 15min"
 category:
   - documentary
 
-thumbnail: "/images/Atlantropa/thumb.png"
+thumbnail: "/images/Atlantropa/thumb_ergebnis.webp"
 
 preview: "/videos/atlantropa-preview.mp4"
 

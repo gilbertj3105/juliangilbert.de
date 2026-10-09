@@ -10,7 +10,7 @@ logline: "Trade Republic verwandelt das klassische „Mensch ärgere dich nicht�
 category:
 - commercial
 
-thumbnail: "/images/Clashforcash/thumb.png"
+thumbnail: "/images/Clashforcash/thumb_ergebnis.webp"
 
 preview: "/videos/CFC-preview.mp4"
 

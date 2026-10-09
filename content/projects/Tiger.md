@@ -7,7 +7,7 @@ info: "Music Video / 2026 / 02:25"
 
 logline: "“TIGER” is about the desire to feel powerful and fearless. Piya, like many of us, is tired of never being the one others are afraid of when she walks home at night—especially as a (petite) young woman. She’s exhausted from feeling vulnerable and constantly on guard. In the song, she imagines what it would be like to reverse the roles—to be a tiger instead—intimidating to everyone at first glance."
 
-thumbnail: "/images/Tiger/thumb.jpg"
+thumbnail: "/images/Tiger/thumb_ergebnis.webp"
 
 preview: "/videos/tiger-preview.mp4"
 

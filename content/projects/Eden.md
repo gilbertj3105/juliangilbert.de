@@ -8,7 +8,7 @@ info: "Fiction / 2025 / 25min"
 category:
   - fiction
 
-thumbnail: "/images/Eden/thumb.png"
+thumbnail: "/images/Eden/thumb_ergebnis.webp"
 
 preview: "/videos/eden-preview.mp4"
 

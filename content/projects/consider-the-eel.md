@@ -8,7 +8,7 @@ info: "Documentary / 2025 / 27min"
 category:
   - documentary
 
-thumbnail: "/images/consider-the-eel/thumb.jpg"
+thumbnail: "/images/consider-the-eel/thumb_ergebnis.webp"
 
 preview: "/videos/consider-the-eel-preview.mp4"
 

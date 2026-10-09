@@ -35,7 +35,7 @@ credits:
 category:
 - commercial
 
-thumbnail: "/images/AOF/thumb.png"
+thumbnail: "/images/AOF/thumb_ergebnis.webp"
 
 preview: "/videos/AOF-preview.mp4"
 

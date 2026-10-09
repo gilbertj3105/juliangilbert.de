@@ -8,7 +8,7 @@ category:
 
 info: "Fiction / 2026 / 8:40min"
 
-thumbnail: "/images/Paradiso/thumb.png"
+thumbnail: "/images/Paradiso/thumb_ergebnis.webp"
 
 credits:
   crew:
