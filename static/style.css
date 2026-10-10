@@ -721,6 +721,14 @@ img.cu-icon {
 
 @media (max-width: 900px) {
 
+  .impressum h1,
+   .impressum h2,
+   .impressum h3 {
+     max-width: 100%;
+     overflow-wrap: anywhere;
+     hyphens: auto;
+   }
+   
   .filter {
     position: relative;
 
@@ -759,7 +767,7 @@ img.cu-icon {
   }
 
   .project-caption h2 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .project,
